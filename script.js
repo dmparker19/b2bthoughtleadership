@@ -208,8 +208,21 @@ function generatePost() {
     
     // Add some context (optional middle paragraph)
     if (Math.random() > 0.5) {
+        const middleParagraphs = [
+            `Think about it: While everyone else is focused on traditional metrics, the real opportunity lies in mastering ${buzzword1}.`,
+            `Here's the thing most people miss about ${buzzword1}: it's not just another buzzword—it's a fundamental shift in how we approach B2B.`,
+            `I've spent countless hours studying ${buzzword1}, and the data is clear: this isn't just a trend, it's a transformation.`,
+            `What's fascinating about ${buzzword1} is how few marketers truly understand its potential.`,
+            `After implementing ${buzzword1} with dozens of clients, the pattern is undeniable.`,
+            `The most exciting part about ${buzzword1}? We're just scratching the surface of what's possible.`,
+            `Look at any category leader, and you'll find ${buzzword1} at the core of their strategy.`,
+            `The ROI on ${buzzword1} isn't just impressive—it's transformative.`,
+            `When you really understand ${buzzword1}, you start seeing opportunities everywhere.`,
+            `The companies that "get" ${buzzword1} are growing 3x faster than their competitors.`
+        ];
+        
         post += '\n\n';
-        post += `Think about it: While everyone else is focused on traditional metrics, the real opportunity lies in mastering ${buzzword1}.`;
+        post += getRandomItem(middleParagraphs);
     }
     
     // Add conclusion with spacing
