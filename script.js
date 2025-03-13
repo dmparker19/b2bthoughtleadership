@@ -207,9 +207,8 @@ function generatePost() {
     let post = opening.replace('X', buzzword1).replace('Y', buzzword2);
     
     // Add some context (optional middle paragraph)
-    if (Math.random() > 0.5) {
+    if (Math.random() > 0.7) {
         const middleParagraphs = [
-            `Think about it: While everyone else is focused on traditional metrics, the real opportunity lies in mastering ${buzzword1}.`,
             `Here's the thing most people miss about ${buzzword1}: it's not just another buzzword—it's a fundamental shift in how we approach B2B.`,
             `I've spent countless hours studying ${buzzword1}, and the data is clear: this isn't just a trend, it's a transformation.`,
             `What's fascinating about ${buzzword1} is how few marketers truly understand its potential.`,
@@ -218,7 +217,13 @@ function generatePost() {
             `Look at any category leader, and you'll find ${buzzword1} at the core of their strategy.`,
             `The ROI on ${buzzword1} isn't just impressive—it's transformative.`,
             `When you really understand ${buzzword1}, you start seeing opportunities everywhere.`,
-            `The companies that "get" ${buzzword1} are growing 3x faster than their competitors.`
+            `The companies that "get" ${buzzword1} are growing 3x faster than their competitors.`,
+            `My team has been quietly testing ${buzzword1} for months. The results? Mind-blowing.`,
+            `What separates the top 1% of B2B brands? Their approach to ${buzzword1}.`,
+            `I recently surveyed 100 CMOs about ${buzzword1}. Only 12% are doing it right.`,
+            `The secret sauce isn't complicated: it's about executing ${buzzword1} flawlessly.`,
+            `Every successful exit I've seen in the last 18 months has had ${buzzword1} as a core driver.`,
+            `The data doesn't lie: companies that master ${buzzword1} see 2-3x better retention.`
         ];
         
         post += '\n\n';
